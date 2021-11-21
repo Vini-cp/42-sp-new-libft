@@ -1,4 +1,16 @@
-#include "../libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vcordeir <vcordeir@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/21 20:10:44 by vcordeir          #+#    #+#             */
+/*   Updated: 2021/11/21 20:10:45 by vcordeir         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../include/libft.h"
 
 static	int	check_initial_conditions(int fd, char ***line, char **stc)
 {

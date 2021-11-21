@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vcordeir <vcordeir@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/21 20:11:25 by vcordeir          #+#    #+#             */
+/*   Updated: 2021/11/21 20:13:03 by vcordeir         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
@@ -7,7 +19,7 @@
 # include <stdarg.h>
 # include <stdint.h>
 
-#define BUFFER_SIZE 32
+# define BUFFER_SIZE 32
 
 typedef struct s_flags
 {
@@ -55,12 +67,13 @@ char				**ft_split(char const *s, char c);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strdup(const char *s);
 char				*ft_strjoin(char const *s1, char const *s2);
-size_t			ft_strlcat(char *dst, const char *src, size_t size);
-size_t			ft_strlcpy(char *dst, const char *src, size_t size);
-size_t			ft_strlen(const char *s);
+size_t				ft_strlcat(char *dst, const char *src, size_t size);
+size_t				ft_strlcpy(char *dst, const char *src, size_t size);
+size_t				ft_strlen(const char *s);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
-char				*ft_strnstr(const char *big, const char *little, size_t len);
+char				*ft_strnstr(const char *big, const char *little,
+						size_t len);
 char				*ft_strrchr(const char *s, int c);
 char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
@@ -78,7 +91,7 @@ int					ft_printf_print_c(t_flags *lst);
 int					ft_printf_isflag(int c);
 void				ft_printf_empty_zeros(t_flags ***lst);
 void				ft_printf_get_flag(char *s, va_list args, t_flags ***lst);
-t_flags			*ft_printf_newflag(void);
+t_flags				*ft_printf_newflag(void);
 void				to_string(const char *f, va_list args, t_flags ***lst);
 
 #endif
