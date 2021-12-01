@@ -6,11 +6,11 @@
 /*   By: vcordeir <vcordeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 20:09:34 by vcordeir          #+#    #+#             */
-/*   Updated: 2021/11/21 20:09:35 by vcordeir         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:45:47 by vcordeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-"../libft.h"
+#include "../libft.h"
 
 t_flags	*ft_printf_newflag(void)
 {

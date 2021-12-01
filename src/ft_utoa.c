@@ -6,11 +6,11 @@
 /*   By: vcordeir <vcordeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 20:10:41 by vcordeir          #+#    #+#             */
-/*   Updated: 2021/11/21 20:10:42 by vcordeir         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:46:07 by vcordeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-"../libft.h"
+#include "../libft.h"
 
 char	*ft_utoa(size_t num, int base, int capitalize)
 {

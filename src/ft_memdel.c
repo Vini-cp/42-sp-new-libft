@@ -6,11 +6,11 @@
 /*   By: vcordeir <vcordeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 20:09:19 by vcordeir          #+#    #+#             */
-/*   Updated: 2021/11/21 20:09:20 by vcordeir         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:44:40 by vcordeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "../libft.h"
 
 int	ft_memdel(void **ptr)
 {

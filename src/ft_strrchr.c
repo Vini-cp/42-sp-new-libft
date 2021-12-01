@@ -6,11 +6,11 @@
 /*   By: vcordeir <vcordeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 20:10:26 by vcordeir          #+#    #+#             */
-/*   Updated: 2021/11/21 20:10:27 by vcordeir         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:44:40 by vcordeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "../libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

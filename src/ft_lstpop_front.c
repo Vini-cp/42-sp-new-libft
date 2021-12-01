@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstpop_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vcordeir <vcordeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/21 20:09:51 by vcordeir          #+#    #+#             */
-/*   Updated: 2021/11/21 20:44:40 by vcordeir         ###   ########.fr       */
+/*   Created: 2021/11/21 20:19:23 by vcordeir          #+#    #+#             */
+/*   Updated: 2021/11/23 18:44:18 by vcordeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+int	ft_lstpop_front(t_list **lst)
 {
-	write(fd, &c, 1);
+	t_list	*next_node;
+	int	content;
+
+	next_node = (*lst)->next;
+	content = (*lst)->content;
+	free(*lst);
+	*lst = next_node;
+	return content;
 }

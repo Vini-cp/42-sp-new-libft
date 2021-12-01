@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vcordeir <vcordeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/21 20:09:51 by vcordeir          #+#    #+#             */
-/*   Updated: 2021/11/21 20:44:40 by vcordeir         ###   ########.fr       */
+/*   Created: 2021/11/21 20:19:21 by vcordeir          #+#    #+#             */
+/*   Updated: 2021/11/21 20:46:26 by vcordeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+void	ft_lstclear(t_list **lst)
 {
-	write(fd, &c, 1);
+	t_list	*next_node;
+
+	next_node = NULL;
+	while ((*lst) != NULL)
+	{
+		next_node = (*lst)->next;
+		free(*lst);
+		(*lst) = next_node;
+	}
 }

@@ -6,11 +6,11 @@
 /*   By: vcordeir <vcordeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 20:09:28 by vcordeir          #+#    #+#             */
-/*   Updated: 2021/11/21 20:09:29 by vcordeir         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:45:56 by vcordeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-"../libft.h"
+#include "../libft.h"
 
 static	int	define_just(int width, int just)
 {

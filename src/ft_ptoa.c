@@ -6,11 +6,11 @@
 /*   By: vcordeir <vcordeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 20:09:48 by vcordeir          #+#    #+#             */
-/*   Updated: 2021/11/21 20:09:49 by vcordeir         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:45:33 by vcordeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-"../libft.h"
+#include "../libft.h"
 
 char	*ft_ptoa(uintptr_t num, int prec)
 {

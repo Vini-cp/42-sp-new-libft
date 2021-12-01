@@ -6,11 +6,11 @@
 /*   By: vcordeir <vcordeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 20:10:46 by vcordeir          #+#    #+#             */
-/*   Updated: 2021/11/21 20:10:48 by vcordeir         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:46:03 by vcordeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-"../libft.h"
+#include "../libft.h"
 
 static	char	define_char(char f, char c)
 {
